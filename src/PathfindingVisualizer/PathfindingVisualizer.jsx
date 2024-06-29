@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { dijkstra } from '../algorithms/dijkstra';
-import  aStar  from '../algorithms/aStar';
 import { bfs } from '../algorithms/bfs';
 import Node from './Node/Node'; // Assume you have a Node component for rendering each grid cell
 import './PathfindingVisualizer.css';
@@ -38,9 +37,6 @@ const PathfindingVisualizer = ({ algorithm, startRow, startCol, endRow, endCol }
     switch (algorithm) {
       case 'dijkstra':
         path = dijkstra(grid, startNode, endNode);
-        break;
-      case 'aStar':
-        path = aStar(grid, startNode, endNode);
         break;
       case 'bfs':
         path = bfs(grid, startNode, endNode);
