@@ -21,7 +21,7 @@ function App() {
           <label htmlFor="algorithm-select">Select Algorithm:</label>
           <select id="algorithm-select" value={algorithm} onChange={(e) => setAlgorithm(e.target.value)}>
             <option value="dijkstra">Dijkstra</option>
-            <option value="aStar">A*</option>
+            
             <option value="bfs">BFS</option>
           </select>
         </div>
